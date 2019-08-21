@@ -7,4 +7,4 @@ CONNECTION_KEEPALIVE="k"
 CONNECTIONS=$(awk -F "k" '{print NF-1}' <<< "${SCORE_BOARD}")
 #echo $CONNECTIONS
 
-check_range $CONNECTIONS 16:30
+check_range $CONNECTIONS $1
